@@ -1,7 +1,7 @@
 # DirtyCode
 
 <p><a href="https://www.youtube.com/watch?v=HRahsNwfS4w" target="_blank">📍 PITCH (Apresentação do projeto)</a> </p>
-<p><a href="https://www.youtube.com/watch?v=HRahsNwfS4w" target="_blank">📍 Vídeo da aplicação</a> </p>
+<p><a href="https://youtu.be/bhJVbf40-5Q?si=fJIaT01FxUcJg4YP" target="_blank">📍 Vídeo da aplicação</a> </p>
 
 <h3>Projeto</h3>
 <p> Nosso projeto da DirtyCode visa criar uma plataforma integrada de monitoramento e conservação marinha utilizando tecnologias de inteligência artificial (IA) e machine learning. A plataforma será capaz de coletar e analisar dados ambientais, gerando insights para o governo, ONGs, comunidades locais e outros stakeholders.
@@ -34,7 +34,7 @@
 
 - Clonar o Repositório:
 ```bash
-git clone https://github.com/ribeiromurilo/DirtyCode-GlobalSolution
+git clone https://github.com/ribeiromurilo/GlobalSolution-Java
 ```
 
 - Abrir o Doker Desktop
@@ -42,19 +42,19 @@ git clone https://github.com/ribeiromurilo/DirtyCode-GlobalSolution
 - Localizar o diretório do arquivo
 - Inserir:
 ```bash
-docker-compose up -d build
+mvn clean install
+```
+```bash
+docker-compose build
+```
+```bash
+docker-compose up -d
 ```
 ```bash
 docker-compose logs app
 ```
 ```bash
-docker-compose logs database
-```
-```bash
 docker volume ls
-```
-```bash
-docker volume inspect oracle-data
 ```
 ```bash
 docker volume inspect app-data
@@ -82,9 +82,3 @@ docker volume inspect app-data
 - [x] CRUD de usuários/Relatorios/Alertas/Sensores/Dados.
       
 <br/>
-
-## 📈 Arquitetura
-
-<div>
-    <img src="./Arquitetura/Arquitetura.png" alt="Arquitetura DevOps" height="400px"/>
-</div>
